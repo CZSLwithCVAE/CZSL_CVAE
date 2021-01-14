@@ -29,4 +29,13 @@ classi.py
 main.py
 utils.py
 ```
-Use `git status` to list all new or modified files that haven't yet been committed
+For each dataset we need to download the data from the `data` directory and have to add the paths to `main.py` to run the code successfully.
+Once the data paths are placed correctly, please run the following command.
+```
+python main.py
+```
+
+We are not claiming the used hyperparameters give the best results, but you are free to explore and let us know better results. 
+
+# License
+This source code is released under The MIT License found in the LICENSE file in the root directory of this source tree.
