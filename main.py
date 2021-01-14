@@ -58,7 +58,7 @@ print('device', device)
 from a_vae import A_VAE
 from classi import classifier_train
 
-
+print('Good Boy')
 #------------------------------------- data preprocessing ---------------------------------------------#
 def dataprocess(data_path):
   with open(data_path, 'rb') as fopen:
@@ -67,12 +67,12 @@ def dataprocess(data_path):
     return contents
 #/home/airl-gpu3/chandan_sethu/CVPR_2021_CGZSL/SUN
 
-trainData1 = dataprocess('/home/airl-gpu3/chandan_sethu/CVPR_2021_CGZSL/CUB/trainData')
-trainLabels1 = dataprocess('/home/airl-gpu3/chandan_sethu/CVPR_2021_CGZSL/CUB/trainLabels')
-trainLabelsVectors1 = dataprocess('/home/airl-gpu3/chandan_sethu/CVPR_2021_CGZSL/CUB/trainAttributes')
-testData1 = dataprocess('/home/airl-gpu3/chandan_sethu/CVPR_2021_CGZSL/CUB/testData')
-testLabels1 = dataprocess('/home/airl-gpu3/chandan_sethu/CVPR_2021_CGZSL/CUB/testLabels')
-ATTR = dataprocess('/home/airl-gpu3/chandan_sethu/CVPR_2021_CGZSL/CUB/dataAttributes')
+trainData1 = dataprocess('https://drive.google.com/file/d/1jpcOirBg8675GtuD8Oa4QVczgZ7suDPR/view?usp=sharing')
+trainLabels1 = dataprocess('https://drive.google.com/file/d/1Fch_H6FI4Y-6KU7gz8NjXvfOrvc1SvGY/view?usp=sharing')
+trainLabelsVectors1 = dataprocess('https://drive.google.com/file/d/1wytjK-9aKreSeEcQqcYAGFJ7ajlK_e41/view?usp=sharing')
+testData1 = dataprocess('https://drive.google.com/file/d/1WbsNUgEeiGJY0p2Q4uIK7xKVKqLG0Ooy/view?usp=sharing')
+testLabels1 = dataprocess('https://drive.google.com/file/d/1lD6F90hGikP6ROwboImpL91YaVA7tNZm/view?usp=sharing')
+ATTR = dataprocess('https://drive.google.com/file/d/1rnoVbA_Hmgcm0c6q5aiiVhxhnSVYgE_L/view?usp=sharing')
 
 '''
 trainData1 = dataprocess('/content/drive/My Drive/ColabNotebooks/Replace GAN/Send_to_Shubhankar/trainData')
