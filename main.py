@@ -67,7 +67,7 @@ def dataprocess(data_path):
     return contents
 #/home/airl-gpu3/chandan_sethu/CVPR_2021_CGZSL/SUN
 
-trainData1 = dataprocess(https://drive.google.com/file/d/1jpcOirBg8675GtuD8Oa4QVczgZ7suDPR/view?usp=sharing)
+trainData1 = dataprocess('https://drive.google.com/file/d/1jpcOirBg8675GtuD8Oa4QVczgZ7suDPR/view?usp=sharing')
 trainLabels1 = dataprocess('https://drive.google.com/file/d/1Fch_H6FI4Y-6KU7gz8NjXvfOrvc1SvGY/view?usp=sharing')
 trainLabelsVectors1 = dataprocess('https://drive.google.com/file/d/1wytjK-9aKreSeEcQqcYAGFJ7ajlK_e41/view?usp=sharing')
 testData1 = dataprocess('https://drive.google.com/file/d/1WbsNUgEeiGJY0p2Q4uIK7xKVKqLG0Ooy/view?usp=sharing')
