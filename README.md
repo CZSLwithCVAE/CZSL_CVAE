@@ -8,15 +8,11 @@
 - CPU or NVIDIA GPU + CUDA10 CuDNN7.5
 
 # Installation
-- Create a conda environment and install few packages\
-
-  conda create -n <env name> python = 3.6
-  conda activate <env name>
-  pip install -r requirements.txt
+- Create a conda environment and install few packages
  ```
-git status
-git add
-git commit
+conda create -n <env name> python = 3.6
+conda activate <env name>
+pip install -r requirements.txt
 ```
   
 
