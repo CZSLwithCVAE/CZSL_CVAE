@@ -58,38 +58,24 @@ print('device', device)
 from a_vae import A_VAE
 from classi import classifier_train
 
-print('Good Boy')
 #------------------------------------- data preprocessing ---------------------------------------------#
 def dataprocess(data_path):
   with open(data_path, 'rb') as fopen:
      #contents = np.load(fopen, allow_pickle=True, encoding='bytes')
     contents = np.load(fopen, allow_pickle=True, encoding='latin1')
     return contents
-#/home/airl-gpu3/chandan_sethu/CVPR_2021_CGZSL/SUN
 
-trainData1 = dataprocess('https://drive.google.com/file/d/1jpcOirBg8675GtuD8Oa4QVczgZ7suDPR/view?usp=sharing')
-trainLabels1 = dataprocess('https://drive.google.com/file/d/1Fch_H6FI4Y-6KU7gz8NjXvfOrvc1SvGY/view?usp=sharing')
-trainLabelsVectors1 = dataprocess('https://drive.google.com/file/d/1wytjK-9aKreSeEcQqcYAGFJ7ajlK_e41/view?usp=sharing')
-testData1 = dataprocess('https://drive.google.com/file/d/1WbsNUgEeiGJY0p2Q4uIK7xKVKqLG0Ooy/view?usp=sharing')
-testLabels1 = dataprocess('https://drive.google.com/file/d/1lD6F90hGikP6ROwboImpL91YaVA7tNZm/view?usp=sharing')
-ATTR = dataprocess('https://drive.google.com/file/d/1rnoVbA_Hmgcm0c6q5aiiVhxhnSVYgE_L/view?usp=sharing')
+trainData1 = dataprocess(train_data_path)
+trainLabels1 = dataprocess(train_label_path)
+trainLabelsVectors1 = dataprocess(train_attr_path)
+testData1 = dataprocess(test_data_path)
+testLabels1 = dataprocess(test_label_path)
+ATTR = dataprocess(attributes_path)
 
-'''
-trainData1 = dataprocess('/content/drive/My Drive/ColabNotebooks/Replace GAN/Send_to_Shubhankar/trainData')
-trainLabels1 = dataprocess('/content/drive/My Drive/ColabNotebooks/Replace GAN/Send_to_Shubhankar/trainLabels')
-trainLabelsVectors1 = dataprocess('/content/drive/My Drive/ColabNotebooks/Replace GAN/Send_to_Shubhankar/trainAttributes')
-ATTR = dataprocess('/content/drive/My Drive/ColabNotebooks/Replace GAN/Send_to_Shubhankar/dataAttributes')
-testData1 = dataprocess('/content/drive/My Drive/ColabNotebooks/Replace GAN/Send_to_Shubhankar/testData')
-testLabels1 = dataprocess('/content/drive/My Drive/ColabNotebooks/Replace GAN/Send_to_Shubhankar/testLabels')
-'''
-#from a_vae import A_VAE
-#from classi import classifier_train
-print(trainLabels1, 'a', testLabels1)
 net = network.net(args).to(device)
 #CLASSI = Classifier.CLASSIFIER(args).to(device)
 
-#print(testData1[0], '0')
-#torch.save(CLASSI.state_dict(), path)
+
 
 appr = A_VAE(net, args)
 #class_appr = classifier_train(CLASSI, args)
@@ -103,12 +89,6 @@ accuracy_matrix = [[] for kk in range(args.num_tasks)]
 overall_acc = []
 replay_Classes = []
 for t in range(args.num_tasks):
-  if t == 15:
-    args.class_epochs = 10
-    args.num_epochs = 50
-  elif t == 18:
-    args.class_epochs = 5
-    args.num_epochs = 20
 
 
   print('Task:', t + 1)
