@@ -20,4 +20,13 @@ mkdir CL_ZSL
 cd CL_ZSL
 git clone https://github.com/CZSLwithCVAE/CZSL_CVAE.git
 ```
-
+- The following structure is expected in the main directory:
+ ```
+./data                          : It contains all four datasets, such as CUB, aPY, AWA1, and AWA2.
+./networks                      : It has architectures of the discriminator, model, and classifier.
+a_vae.py                        
+classi.py
+main.py
+utils.py
+```
+Use `git status` to list all new or modified files that haven't yet been committed
