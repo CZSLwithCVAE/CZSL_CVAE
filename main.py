@@ -346,10 +346,10 @@ for t in range(args.num_tasks):
       avgAcc_tw = avgAcc_tw + (dict_correct_tw[ii]*1.0)/(dict_total_tw[ii])
       num_seen_tw = num_seen_tw + 1
         
-      avgAcc_tw = avgAcc_tw/num_seen_tw
+    avgAcc_tw = avgAcc_tw/num_seen_tw
         
-      #testData_tw[jj].append(avgAcc_tw)
-      accuracy_matrix[t].append(avgAcc_tw)
+    #testData_tw[jj].append(avgAcc_tw)
+    accuracy_matrix[t].append(avgAcc_tw)
   #print(accuracy_matrix, 'testData_tw')
 
 #########################################################################
