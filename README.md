@@ -39,4 +39,4 @@ python main.py
 We are not claiming the used hyperparameters give the best results, but you are free to explore and let us know better results. 
 
 # License
-This source code is released under The MIT License found in the LICENSE file in the root directory of this source tree.
+This source code is released under The MIT License found in the [LICENSE](https://github.com/CZSLwithCVAE/CZSL_CVAE/blob/main/LICENSE) file in the root directory of this source tree.
