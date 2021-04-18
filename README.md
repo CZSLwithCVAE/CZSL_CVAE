@@ -4,7 +4,7 @@ This is the official PyTorch implementation of [Adversarial Training of Variatio
 Most of the existing artificial neural networks(ANNs) fail to learn continually due to catastrophic forgetting, while humans can do the same by maintaining previous tasks' performances. Although storing all the previous data can alleviate the problem, but it takes a large memory, infeasible in real-world utilization. We propose a more suitable model in real-case scenarios to address the issue that can learn sequentially and distinguish classes the model has not seen during training. We present a hybrid network that consists of a shared VAE module to hold information of all tasks and task-specific private VAE modules for each task. The model's size grows with each task to prevent catastrophic forgetting of task-specific skills, and it includes a replay approach to preserve shared skills. We demonstrate our hybrid model is effective on several datasets, i.e., CUB, AWA1, AWA2, and aPY. We show our method is superior to both architecture-based and memory-based approaches on class sequentially learning with ZSL(Zero-Shot Learning) and GZSL(Generalized Zero-Shot Learning).
 
 # Authors:
-[Subhankar Ghosh](https://scholar.google.com/citations?user=1Q73N6IAAAAJ&hl=en)
+[Subhankar Ghosh](https://scholar.google.com/citations?user=1Q73N6IAAAAJ&hl=en)(Indian Institute of Science)
 # Citation
 @article{ghosh2021adversarial,
   title={Adversarial Training of Variational Auto-encoders for Continual Zero-shot Learning},
