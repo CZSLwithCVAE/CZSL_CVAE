@@ -6,11 +6,11 @@ Most of the existing artificial neural networks(ANNs) fail to learn continually 
 # Authors:
 [Subhankar Ghosh](https://scholar.google.com/citations?user=1Q73N6IAAAAJ&hl=en)(Indian Institute of Science)
 # Citation
-@article{ghosh2021adversarial,\
-  title={Adversarial Training of Variational Auto-encoders for Continual Zero-shot Learning},\
-  author={Ghosh, Subhankar},\
-  journal={arXiv preprint arXiv:2102.03778},\
-  year={2021}
+-@article{ghosh2021adversarial,
+ - title={Adversarial Training of Variational Auto-encoders for Continual Zero-shot Learning},
+ - author={Ghosh, Subhankar},
+ - journal={arXiv preprint arXiv:2102.03778},
+ - year={2021}
 }
 
 # Prerequisites:
