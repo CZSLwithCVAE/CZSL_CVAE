@@ -7,6 +7,7 @@ process but not during the testing. We present a hybrid network that consists of
 # Authors:
 [Subhankar Ghosh](https://scholar.google.com/citations?user=1Q73N6IAAAAJ&hl=en)(Indian Institute of Science)
 # Citation
+If using this code, parts of it, or developments from it, please cite our paper:
 ```
 @article{ghosh2021adversarial,
   title={Adversarial Training of Variational Auto-encoders for Continual Zero-shot Learning},
