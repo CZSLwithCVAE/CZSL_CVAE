@@ -1,0 +1,6 @@
+@article{ghosh2021adversarial,
+  title={Adversarial Training of Variational Auto-encoders for Continual Zero-shot Learning},
+  author={Ghosh, Subhankar},
+  journal={arXiv preprint arXiv:2102.03778},
+  year={2021}
+}
