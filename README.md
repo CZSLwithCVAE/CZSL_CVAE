@@ -5,7 +5,7 @@ Most of the existing artificial neural networks(ANNs) fail to learn continually 
 process but not during the testing. We present a hybrid network that consists of a shared VAE module to hold information of all tasks and task-specific private VAE modules for each task. The model's size grows with each task to prevent catastrophic forgetting of task-specific skills, and it includes a replay approach to preserve shared skills. We demonstrate our hybrid model outperforms the baselines and is effective on several datasets, i.e., CUB, AWA1, AWA2, and aPY. We show our method is superior in class sequentially learning with ZSL(Zero-Shot Learning) and GZSL(Generalized Zero-Shot Learning).
 
 # Authors:
-[Subhankar Ghosh](https://scholar.google.com/citations?user=1Q73N6IAAAAJ&hl=en)(Indian Institute of Science)
+[Subhankar Ghosh](https://sites.google.com/view/subhankarghosh/home)(Indian Institute of Science)
 # Citation
 If using this code, parts of it, or developments from it, please cite our paper:
 ```
